@@ -38,4 +38,9 @@ public class Garage {
 		System.out.println("Removed!");
 	}
 	
+	public void removeByType(String type) {
+		Garage.removeIf(n -> n.getClass().getSimpleName().equals(type));
+		System.out.println("Type cleared!");
+	}
+	
 }
