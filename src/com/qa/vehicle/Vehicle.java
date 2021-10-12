@@ -4,17 +4,28 @@ public class Vehicle {
 	private String name;
 	private String brand;
 	private int length;
+	private int price;
 	/**
 	 * @param name
 	 * @param brand
 	 * @param length
 	 */
+	public Vehicle(String name, String brand, int length, int price) {
+		super();
+		this.name = name;
+		this.brand = brand;
+		this.length = length;
+		this.price = price;
+	}
+	
 	public Vehicle(String name, String brand, int length) {
 		super();
 		this.name = name;
 		this.brand = brand;
 		this.length = length;
+		this.price = 0;
 	}
+	
 	public String getName() {
 		return name;
 	}
@@ -32,5 +43,9 @@ public class Vehicle {
 	}
 	public void setLength(int length) {
 		this.length = length;
+	}
+	
+	public int calcBill() {
+		return this.price;
 	}
 }
