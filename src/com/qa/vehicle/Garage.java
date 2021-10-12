@@ -5,12 +5,17 @@ import java.util.ArrayList;
 public class Garage {
 	ArrayList<Vehicle> Garage = new ArrayList<>();
 	
+
+	
 	public void addVehicle(Vehicle item) {
+		System.out.println("Adding " + item.getName());
 		Garage.add(item);
 	}
 	
 	
+	
 	public void emptyGarage() {
-		Garade.void();
+		System.out.println("Clearing Garage!");
+		Garage.clear();
 	}
 }
