@@ -33,6 +33,11 @@ public class Garage {
 		Garage.remove(id);
 	}
 	
+	public void updateByID(int id, Vehicle replacement) {
+		System.out.println("Updating vehicle!");
+		Garage.set(id, replacement);
+	}
+	
 	public void removeByName(String name) {
 		Garage.removeIf(n -> n.getName().equals(name));
 		System.out.println("Removed!");
